@@ -3,18 +3,13 @@ import os
 from twisted.application import service
 from buildbot.master import BuildMaster
 
-basedir = '/usr/home/iblis/ci/master'
+basedir = os.path.abspath(os.path.dirname(__file__))
 rotateLength = 10000000
 maxRotatedFiles = 10
 configfile = 'master.cfg'
 
 # Default umask for server
 umask = None
-
-# if this is a relocatable tac file, get the directory containing the TAC
-if basedir == '.':
-    import os
-    basedir = os.path.abspath(os.path.dirname(__file__))
 
 # note: this line is matched against to check that this is a buildmaster
 # directory; do not edit it.
