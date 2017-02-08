@@ -1,0 +1,2 @@
+buildbot[bundle]==0.9.3
+git+https://github.com/iblis17/buildbot-freebsd.git
