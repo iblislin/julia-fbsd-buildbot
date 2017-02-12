@@ -1,4 +1,5 @@
 *.sqlite
-twistd.log
+*.log
 twistd.pid
 gitpoller-workdir
+tmp/*
