@@ -4,3 +4,4 @@ twistd.hostname
 twistd.pid
 gitpoller-workdir
 tmp/*
+master/poller/*
