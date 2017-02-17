@@ -5,3 +5,4 @@ twistd.pid
 gitpoller-workdir
 tmp/*
 master/poller/*
+worker/12cur-amd64/*
