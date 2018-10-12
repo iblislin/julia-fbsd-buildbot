@@ -22,7 +22,7 @@ except ImportError:
     # probably not yet twisted 8.2.0 and beyond, can't set log yet
     pass
 
-buildmaster_host = 'localhost'
+buildmaster_host = 'build.julialang.org'
 port = 9989
 workername = 'bsd-worker'
 passwd = 'pass'
