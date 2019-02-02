@@ -1,0 +1,14 @@
+#!/bin/sh
+
+. /etc/rc.subr
+
+name="jlbuildbot"
+rcvar=jlbuildbot_enable
+
+start_cmd="/usr/local/bin/sudo -u julia /home/julia/venv/bin/buildbot-worker start /usr/home/julia/julia-fbsd-buildbot/worker"
+stop_cmd="/usr/local/bin/sudo -u julia /home/julia/venv/bin/buildbot-worker stop /usr/home/julia/julia-fbsd-buildbot/worker"
+
+load_rc_config $name
+: ${jlbuildbot_enable:=no}
+
+run_rc_command "$1"
