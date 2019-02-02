@@ -1,5 +1,5 @@
 requests
 txrequests
-buildbot[bundle]==0.9.3
+buildbot[bundle]==1.4.0
 git+https://github.com/iblis17/buildbot-freebsd.git
 service_identity
