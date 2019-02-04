@@ -11,4 +11,6 @@ stop_cmd="/usr/local/bin/sudo -u julia /home/julia/venv/bin/buildbot-worker stop
 load_rc_config $name
 : ${jlbuildbot_enable:=no}
 
+PATH="${PATH}:/usr/local/bin:/usr/local/sbin"
+
 run_rc_command "$1"
