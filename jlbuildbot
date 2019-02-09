@@ -12,5 +12,6 @@ load_rc_config $name
 : ${jlbuildbot_enable:=no}
 
 PATH="${PATH}:/usr/local/bin:/usr/local/sbin"
+LC_ALL="en_US.UTF-8"
 
 run_rc_command "$1"
